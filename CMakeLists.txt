@@ -67,6 +67,7 @@ install(FILES include/KernelLib.h DESTINATION include/ )
 # 导出项目名
 install(TARGETS ${PROJECT_NAME}
         EXPORT ${PROJECT_NAME}
+        INCLUDES DESTINATION "include"
 )
 
 install(EXPORT ${PROJECT_NAME}  FILE "${PROJECT_NAME}Config.cmake" DESTINATION "share/")
